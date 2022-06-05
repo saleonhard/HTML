@@ -6,7 +6,9 @@ and open the template in the editor.
 <html>
     <head>
         <title>Relatório</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="Untitled1.css" rel="stylesheet">
+        <link href="teste.css" rel="stylesheet">
         <style type="text/css">
             @page{
                 margin-top: 3cm;
@@ -62,8 +64,10 @@ and open the template in the editor.
     </head>
     <body>
         <div>
+            <img src="logohec.jpg" alt="some text" width=640 height=110>
             <p id="titulo"><b>{{NOME_DA_EMPRESA}}</b></p>
             <p><b>Cliente: </b>{{NOME_DO_CLIENTE}}.</p>
+
         </div>
         <table id="tabela">
             <thead>
@@ -72,6 +76,7 @@ and open the template in the editor.
                     <th class="celula_head">Quant</th>
                     <th class="celula_head">Unid</th>
                     <th class="celula_head">Descrição do Produto</th>
+                    <th class="celula_head">COPIA</th>
                     <th class="celula_head">Valor Unit</th>
                     <th class="celula_head">Total</th>
                 </tr>
@@ -83,12 +88,23 @@ and open the template in the editor.
                     <td class="celula_center">{{QUANTIDADE}}</td>
                     <td class="celula_center">{{UNIDADE}}</td>
                     <td class="celula">{{DESCRIÇÃO}}</td>
+                    <td class="celula">{{COPIA}}</td>
                     <td class="celula">R$ {{VALOR_UNITARIO}}</td>
                     <td class="celula">R$ {{TOTAL}}</td>
                 </tr>
                 {{LOOP_FIM}}
             </tbody>
         </table>
+        <div>
+           
+            <p id="titulo" style='text-align:justify;'><b>{{TEXTO}}</b></p>
+            
+
+        </div>
+        <div id="wb_Shape1" style="position:absolute;left:42px;top:755px;width:19px;height:19px;z-index:4;">
+            <img src="images/img0001.png" id="Shape1" alt="text" title="text" width="19" height="19" style="width:19px;height:19px;">
+            <div id="Shape1_text"><div><span style="color:#000000;font-family:Arial;font-size:13px;"><strong>{{BOX}}</strong></span></div></div>
+        </div>
         <div id="rodape-final">
             <hr size="1" color=black>
             <p id="align-right"><b>TOTAL GERAL: </b>R$ {{TOTAL_GERAL}}</p>

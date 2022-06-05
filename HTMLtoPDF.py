@@ -8,7 +8,7 @@ import pdfkit as pdf
 # to an image...
 # wkHTMLtoPDF will not load the image and
 # the image will not appear in the pdf!!!
-pdf.from_file('Index.html','file.pdf')
+pdf.from_file('modelo_relatorio.html','file.pdf')
 
 ##url = 'https://en.wikipedia.org/wiki/QWERTY'
 #pdf.from_url(url, 'webSite.pdf')
