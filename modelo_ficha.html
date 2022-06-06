@@ -1,0 +1,124 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Relatório</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="Untitled1.css" rel="stylesheet">
+        <link href="teste.css" rel="stylesheet">
+        <style type="text/css">
+            @page{
+                margin-top: 1cm;
+                margin-left: 1cm;
+                margin-bottom: 2cm;
+                margin-left: 1cm;
+            }
+            #titulo{
+                font-size: 14px;
+                text-align: center;
+            }
+            #tabela{
+                width: 90%;
+                font-size: 12px;
+                margin: 0 auto;
+                text-align: justify;
+                border: 1px solid black;
+                border-collapse: collapse;
+                white-space: pre-line;
+                table-layout: auto;
+                width: content-box;
+				height: content-box;
+                margin-top: 1cm;
+                margin-left: 1cm;
+                margin-left: 1cm;
+            }
+            .celula{
+                border: 1px solid black;
+                text-align: justify;
+                font-size: 12px;
+            }
+            .celula_center{
+                border: 1px solid black;
+                text-align: center;
+                font-size: 12px;
+			}
+            .celula_head{
+                border: 2px solid black;
+                background-color: #D3D3D3;
+                text-align: center;
+                font-size: 12px;
+            }
+            #rodape-final{
+                width: 100%;
+                position: absolute;
+                top: 22cm;
+                left: 0cm;
+                bottom: 3cm;
+                right: 2cm;
+                font-size: 12px;
+            }
+            #align-right{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            
+            <img src="logohec.jpg" alt="some text" width=640 height=110>
+            <p id="titulo"><b>{{NOME_DA_EMPRESA}}</b></p>
+            <p><b>Cliente: </b>{{NOME_DO_CLIENTE}}.</p>
+
+        </div>
+        <table id="tabela">
+            <thead>
+                <tr>
+                	<th class="celula_head">NOTIFICAÇÃO EVENTOS ADVERSOS</th>
+                </tr>
+            </thead>
+        </table>
+        <table id="tabela">
+            <thead>
+                <tr>
+                	<th class="celula_head">Cod</th>
+                    <th class="celula_head">Quant</th>
+                    <th class="celula_head">Unid</th>
+                    <th class="celula_head">Descrição do Produto</th>
+                    <th class="celula_head">COPIA</th>
+                    <th class="celula_head">Valor Unit</th>
+                    <th class="celula_head">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr>
+                	<td class="celula_center">{{COD}}</td>
+                    <td class="celula_center">{{QUANTIDADE}}</td>
+                    <td class="celula_center">{{UNIDADE}}</td>
+                    <td class="celula">{{DESCRIÇÃO}}</td>
+                    <td class="celula">{{COPIA}}</td>
+                    <td class="celula">R$ {{VALOR_UNITARIO}}</td>
+                    <td class="celula">R$ {{TOTAL}}</td>
+                </tr>
+              
+            </tbody>
+        </table>
+        <div>
+           
+            <p id="titulo" style='text-align:justify;'><b>{{TEXTO}}</b></p>
+            
+
+        </div>
+        <div id="wb_Shape1" style="position:absolute;left:42px;top:755px;width:19px;height:19px;z-index:4;">
+            <img src="images/img0001.png" id="Shape1" alt="text" title="text" width="19" height="19" style="width:19px;height:19px;">
+            <div id="Shape1_text"><div><span style="color:#000000;font-family:Arial;font-size:13px;"><strong>{{BOX}}</strong></span></div></div>
+        </div>
+        <div id="rodape-final">
+            <hr size="1" color=black>
+            <p id="align-right"><b>TOTAL GERAL: </b>R$ {{TOTAL_GERAL}}</p>
+        </div>
+    </body>
+</html>

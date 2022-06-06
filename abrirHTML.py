@@ -1,2 +1,2 @@
 import webbrowser 
-webbrowser.open('teste.html')  
+webbrowser.open('doc.html')  
