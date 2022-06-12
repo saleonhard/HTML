@@ -1,16 +1,10 @@
 #coding: iso8859-1
-'''
-Created on 08/10/2013
 
-@author: SANTOS, Cloves O.
-'''
 import webbrowser 
 from os.path import abspath
 
 class Relatorio(object):
-    """
-    Manipula um HTML, usa algumas palavras reservadas.
-    """
+  
     
     __html = None
     __tabela = None
@@ -25,8 +19,8 @@ class Relatorio(object):
     cliente = f'Cliente não informado'
     texto = f'   O escritor de IA da Smodin é fácil de usar. Forneça seu prompt com algumas palavras e gere facilmente artigos e ensaios livres de plágio, exclusivos e de alta qualidade em minutos. Digite o que deseja escrever em uma ou duas frases pequenas, com pelo menos os caracteres mínimos necessários para que a ferramenta funcione, e clique no botão gerar texto. Nosso AI Writer criará o conteúdo que você pode revisar, editar em partes ou usar apenas as partes que você gostou, continuar aprimorando o texto original ou continuar gerando a partir da semente original. Este gerador de texto de IA fácil de usar pode ser usado por todos os níveis de ensino para produzir ensaios e artigos e também para redação, marketing, criação de páginas, redação de parágrafos, manchetes, listas e muito mais. Não há necessidade de software ou habilidades de programação.'
     box = ''
-    print(texto)
-    def __init__(self, local = abspath("modelo_relatorio.html")):
+    
+    def __init__(self, local = abspath("formulario.html")):
         arq = open(local, "r")
         self.__html = "<LINHA>".join(arq.readlines())
         arq.close()
@@ -83,7 +77,7 @@ class Relatorio(object):
         arq = open("documento2.html", "w")
         arq.writelines(self.__html)
         arq.close()
-        return 9
+        return
 
 qtd = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 unid = ["cx", "unid", "algo", "cx", "unid", "algo", "cx", "unid", "algo"]
