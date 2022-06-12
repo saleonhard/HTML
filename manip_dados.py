@@ -20,7 +20,7 @@ class Relatorio(object):
     texto = f'   O escritor de IA da Smodin é fácil de usar. Forneça seu prompt com algumas palavras e gere facilmente artigos e ensaios livres de plágio, exclusivos e de alta qualidade em minutos. Digite o que deseja escrever em uma ou duas frases pequenas, com pelo menos os caracteres mínimos necessários para que a ferramenta funcione, e clique no botão gerar texto. Nosso AI Writer criará o conteúdo que você pode revisar, editar em partes ou usar apenas as partes que você gostou, continuar aprimorando o texto original ou continuar gerando a partir da semente original. Este gerador de texto de IA fácil de usar pode ser usado por todos os níveis de ensino para produzir ensaios e artigos e também para redação, marketing, criação de páginas, redação de parágrafos, manchetes, listas e muito mais. Não há necessidade de software ou habilidades de programação.'
     box = ''
     
-    def __init__(self, local = abspath("formulario.html")):
+    def __init__(self, local = abspath("modelo_relatorio.html")):
         arq = open(local, "r")
         self.__html = "<LINHA>".join(arq.readlines())
         arq.close()
@@ -74,7 +74,7 @@ class Relatorio(object):
         de salvar o HTML.
         """
         self.__saveDadosHtml()
-        arq = open("documento2.html", "w")
+        arq = open("resul.html", "w")
         arq.writelines(self.__html)
         arq.close()
         return

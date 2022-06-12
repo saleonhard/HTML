@@ -1,0 +1,185 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Relatório</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="Untitled1.css" rel="stylesheet">
+        <link href="teste.css" rel="stylesheet">
+        <style type="text/css">
+            @page{
+                margin-top: 1cm;
+                margin-left: 3cm;
+                margin-bottom: 2cm;
+                margin-left: 2cm;
+            }
+            #titulo{
+                font-size: 14px;
+                text-align: center;
+            }
+            #tabela{
+                width: 90%;
+                font-size: 12px;
+                margin: 0 auto;
+                text-align: justify;
+                border: 1px solid black;
+                border-collapse: collapse;
+                white-space: pre-line;
+                table-layout: auto;
+                width: content-box;
+				height: content-box;
+            }
+            .celula{
+                border: 1px solid black;
+                text-align: justify;
+                font-size: 12px;
+            }
+            .celula_center{
+                border: 1px solid black;
+                text-align: center;
+                font-size: 12px;
+			}
+            .celula_head{
+                border: 2px solid black;
+                background-color: #D3D3D3;
+                text-align: center;
+                font-size: 12px;
+            }
+            #rodape-final{
+                width: 100%;
+                position: absolute;
+                top: 22cm;
+                left: 0cm;
+                bottom: 3cm;
+                right: 2cm;
+                font-size: 12px;
+            }
+            #align-right{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            
+            <img src="logohec.jpg" alt="some text" width=640 height=110>
+            <p id="titulo"><b>HEC</b></p>
+            <p><b>Cliente: </b>Cliente não informado.</p>
+
+        </div>
+        <table id="tabela">
+            <thead>
+                <tr>
+                	<th class="celula_head">Cod</th>
+                    <th class="celula_head">Quant</th>
+                    <th class="celula_head">Unid</th>
+                    <th class="celula_head">Descrição do Produto</th>
+                    <th class="celula_head">COPIA</th>
+                    <th class="celula_head">Valor Unit</th>
+                    <th class="celula_head">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                                <tr>
+                	<td class="celula_center">1</td>
+                    <td class="celula_center">1</td>
+                    <td class="celula_center">cx</td>
+                    <td class="celula">{{DESCRIÇÃO}}</td>
+                    <td class="celula">safsafsadfsadf</td>
+                    <td class="celula">R$ 9.00</td>
+                    <td class="celula">R$ 9.00</td>
+                </tr>
+                <tr>
+                	<td class="celula_center">2</td>
+                    <td class="celula_center">2</td>
+                    <td class="celula_center">unid</td>
+                    <td class="celula">{{DESCRIÇÃO}}</td>
+                    <td class="celula">;asrklbjsafoyiasnckf</td>
+                    <td class="celula">R$ 8.00</td>
+                    <td class="celula">R$ 16.00</td>
+                </tr>
+                <tr>
+                	<td class="celula_center">3</td>
+                    <td class="celula_center">3</td>
+                    <td class="celula_center">algo</td>
+                    <td class="celula">{{DESCRIÇÃO}}</td>
+                    <td class="celula">asdoynascfklhnasfdkl</td>
+                    <td class="celula">R$ 7.00</td>
+                    <td class="celula">R$ 21.00</td>
+                </tr>
+                <tr>
+                	<td class="celula_center">4</td>
+                    <td class="celula_center">4</td>
+                    <td class="celula_center">cx</td>
+                    <td class="celula">{{DESCRIÇÃO}}</td>
+                    <td class="celula">asopfsyadfopasopynsfd</td>
+                    <td class="celula">R$ 6.00</td>
+                    <td class="celula">R$ 24.00</td>
+                </tr>
+                <tr>
+                	<td class="celula_center">5</td>
+                    <td class="celula_center">5</td>
+                    <td class="celula_center">unid</td>
+                    <td class="celula">{{DESCRIÇÃO}}</td>
+                    <td class="celula">safsafsadfsadf</td>
+                    <td class="celula">R$ 5.00</td>
+                    <td class="celula">R$ 25.00</td>
+                </tr>
+                <tr>
+                	<td class="celula_center">6</td>
+                    <td class="celula_center">6</td>
+                    <td class="celula_center">algo</td>
+                    <td class="celula">{{DESCRIÇÃO}}</td>
+                    <td class="celula">;asrklbjsafoyiasnckfhasf</td>
+                    <td class="celula">R$ 4.00</td>
+                    <td class="celula">R$ 24.00</td>
+                </tr>
+                <tr>
+                	<td class="celula_center">7</td>
+                    <td class="celula_center">7</td>
+                    <td class="celula_center">cx</td>
+                    <td class="celula">{{DESCRIÇÃO}}</td>
+                    <td class="celula">asdoynascfklhnasfdkl</td>
+                    <td class="celula">R$ 3.00</td>
+                    <td class="celula">R$ 21.00</td>
+                </tr>
+                <tr>
+                	<td class="celula_center">8</td>
+                    <td class="celula_center">8</td>
+                    <td class="celula_center">unid</td>
+                    <td class="celula">{{DESCRIÇÃO}}</td>
+                    <td class="celula">asopfsyadfopasopynsfd</td>
+                    <td class="celula">R$ 2.00</td>
+                    <td class="celula">R$ 16.00</td>
+                </tr>
+                <tr>
+                	<td class="celula_center">9</td>
+                    <td class="celula_center">9</td>
+                    <td class="celula_center">algo</td>
+                    <td class="celula">{{DESCRIÇÃO}}</td>
+                    <td class="celula">Vamos voltar ao nosso quarto.</td>
+                    <td class="celula">R$ 1.00</td>
+                    <td class="celula">R$ 9.00</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div>
+           
+            <p id="titulo" style='text-align:justify;'><b>   O escritor de IA da Smodin é fácil de usar. Forneça seu prompt com algumas palavras e gere facilmente artigos e ensaios livres de plágio, exclusivos e de alta qualidade em minutos. Digite o que deseja escrever em uma ou duas frases pequenas, com pelo menos os caracteres mínimos necessários para que a ferramenta funcione, e clique no botão gerar texto. Nosso AI Writer criará o conteúdo que você pode revisar, editar em partes ou usar apenas as partes que você gostou, continuar aprimorando o texto original ou continuar gerando a partir da semente original. Este gerador de texto de IA fácil de usar pode ser usado por todos os níveis de ensino para produzir ensaios e artigos e também para redação, marketing, criação de páginas, redação de parágrafos, manchetes, listas e muito mais. Não há necessidade de software ou habilidades de programação.</b></p>
+            
+
+        </div>
+        <div id="wb_Shape1" style="position:absolute;left:42px;top:755px;width:19px;height:19px;z-index:4;">
+            <img src="images/img0001.png" id="Shape1" alt="text" title="text" width="19" height="19" style="width:19px;height:19px;">
+            <div id="Shape1_text"><div><span style="color:#000000;font-family:Arial;font-size:13px;"><strong></strong></span></div></div>
+        </div>
+        <div id="rodape-final">
+            <hr size="1" color=black>
+            <p id="align-right"><b>TOTAL GERAL: </b>R$ 165.00</p>
+        </div>
+    </body>
+</html>
